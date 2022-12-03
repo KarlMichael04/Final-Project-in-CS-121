@@ -112,6 +112,45 @@ class hotelbill:
             print("Invalid option")
             
       print ("Total food Cost+Rs,self.r,"\n")
+             
+    def	laundrybill(self):
+        print ("******LAUNDRY MENU*******")
+
+        print ("1.Shorts----->P3","2.Shirts----->P4","3.Jackets--->P10","4.Jeans---->P8","5.Suit--->P15","6.Exit")
+
+        while (1):
+            #brought to you by code-projects.org
+
+            e=int(input("Enter your choice:"))
+
+            if (e==1):
+                f=int(input("Enter the quantity:"))
+                self.t=self.t+3*f
+
+            elif (e==2):
+                f=int(input("Enter the quantity:"))
+                self.t=self.t+4*f
+
+            elif (e==3):
+                f=int(input("Enter the quantity:"))
+                self.t=self.t+10*f
+
+            elif (e==4):
+                f=int(input("Enter the quantity:"))
+                self.t=self.t+8*f
+
+            elif (e==5):
+                f=int(input("Enter the quantity:"))
+                self.t=self.t+15*f
+            elif (e==6):
+                break;
+            else:
+
+                print ("Invalid option")
+
+
+        print ("Total Laundary Cost=P",self.t,"\n")
+
             
            
       
