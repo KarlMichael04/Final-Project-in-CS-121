@@ -76,3 +76,51 @@ class hotelbill:
             print ("Please choose a room")
             
         print ("Your room rent is =",self.s,"\n")
+    
+     def restaurantbill(self):
+    
+        print("*****RESTAURANT MENU*****")
+      
+        print("1.water----->Rs20","2.tea----->Rs10"."3.breakfast combo--->Rs90",4.lunch---->Rs110","5.dinner--->Rs150","6.Exit")
+        
+        while (1):
+           
+          c=int(input("Enter your choice:"))
+          
+        if(c==1):
+           d=int(input(Enter the quantity:"))
+           self.r-self.r+20*d
+            
+        elif (c==2):
+            d=int(input("Enter the quantity:"))
+            self.r=self.r+10*d
+            
+        elif (c==3):
+            d=int(input("Enter the quantity:"))
+            self.r=self.r+90*d
+            
+        elif (c==4):
+            d=int(input(Enter the quantity:"))
+            self.r=self.r=110*d
+            
+        elif (c==5):
+            d=int(input(Enter the quantity:"))
+            self.r=self.r+150*d
+            
+        elif (c==6):
+           break:
+        else:
+           print('Invalid option")
+           
+     print ("Total food Cost=Rs",self.r,"\n")
+         
+            
+            
+          
+          
+        
+        
+      
+      
+    
+    
