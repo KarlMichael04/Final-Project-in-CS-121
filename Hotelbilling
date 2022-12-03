@@ -100,11 +100,11 @@ class hotelbill:
             self.r=self.r+90*d
             
         elif (c==4):
-            d=int(input(Enter the quantity:"))
+            d=int(input("Enter the quantity:"))
             self.r=self.r=110*d
             
         elif (c==5):
-            d=int(input(Enter the quantity:"))
+            d=int(input("Enter the quantity:"))
             self.r=self.r+150*d
             
         elif (c==6):
