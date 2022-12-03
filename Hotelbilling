@@ -87,8 +87,8 @@ class hotelbill:
            
           c=int(input("Enter your choice:"))
           
-        if(c==1):
-           d=int(input(Enter the quantity:"))
+         if(c==1):
+           d=int(input("Enter the quantity:"))
            self.r-self.r+20*d
             
         elif (c==2):
