@@ -206,6 +206,25 @@ class hotelbill:
            print("Additional Service Charge is:",self.a)
            print("Your grand total bill is:",self.rt+self.a"\n)
            self.rno+=1
+                 
+           def main():
+                 
+                 a=hotelfare()
+                 
+                 while (1):
+                     print("1.Enter Customer Data")
+                 
+                     print("2.Room Rent")
+                 
+                     print("3.Restaurant Bill")
+                 
+                     print("4.Laundry Bill")
+                 
+                     print("5.GAme Bill")
+                 
+                     print("6.Show total cost")
+                 
+                     print("7.EXIT")
        
         
          
