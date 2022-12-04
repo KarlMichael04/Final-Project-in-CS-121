@@ -150,13 +150,63 @@ class hotelbill:
 
 
         print ("Total Laundary Cost=P",self.t,"\n")
-
+    defgamebill(self)   
+          print("******GAME MENU******")
+         
+          print(1.Table tennis--->Rs60","2.Bowling--->Rs80","3.Snooker--->Rs70","4.Video Games--->Rs90","5.Pool--->Rs50==6","6.Exit")
+        
+       while(1):
+           g=int(input("Enter your choice:")
+         
+       if(g==1):
+           g=int(input(No.ofhours:")
+            self.p=self.p+60*h
+       
+         elif(g==2):
+           g=int(input(No.ofhours:")
+            self.p=self.p+80*h
             
+         elif(g==3):
+           g=int(input(No.ofhours:")
+            self.p=self.p+70*h
+         
+         elif(g==4):
+           g=int(input(No.ofhours:")
+            self.p=self.p+90*h
            
-      
-            
-           
+         elif(g==5):
+           g=int(input(No.ofhours:")
+            self.p=self.p+50*h
           
+         elif(g==6)
+           break;
+     
+       else:
+          print("Invalid option")
+  
+        print("TotalGameBill=Rs",self.p,"\n")
+  
+
+       defdispaly(self):
+           print("*******HOTEL BILLS******")
+           print("Customer details")
+           print("Customer name:",self.name)
+           print("Customer address:",self.address)
+           print("Check in date:",self.cindate)
+           print("Check out date:",self.coutdate)
+           print("Room no.",self.rno)
+           print("Your Roomrent is:",self.s)
+           print("Your Foodbill is:",self.r)
+           print("Your laundrybill is:",self.t)
+           print("Your Gamebill is:",self.p
+
+           self.rt=self.s+self.t+self.p+self.r
+   
+           print("Your subtotal bill is:",self.rt)
+           print("Additional Service Charge is:",self.a)
+           print("Your grand total bill is:",self.rt+self.a"\n)
+           self.rno+=1
+       
         
          
        
