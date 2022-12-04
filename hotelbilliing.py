@@ -205,13 +205,13 @@ class hotelbill:
            print("Your subtotal bill is:",self.rt)
            print("Additional Service Charge is:",self.a)
            print("Your grand total bill is:",self.rt+self.a"\n)
-           self.rno+=1
+           self.rno+=1                 
                  
            def main():
                  
                  a=hotelfare()
                  
-                 while (1):
+                 while (1):                 
                      print("1.Enter Customer Data")
                  
                      print("2.Room Rent")
@@ -225,6 +225,39 @@ class hotelbill:
                      print("6.Show total cost")
                  
                      print("7.EXIT")
+                 
+                 b=int(input("\nEnter your choice:"))
+                 if(b==1):
+                    a.inputdata()
+                 
+                 if(b==2):
+                 
+                    a.roomrent()
+                 
+                 if(b==3):
+                   
+                    a.restaurantbill()
+                 
+                 if(b==4):
+                 
+                    a.laudrybill()
+                 
+                 if(b==5):
+                 
+                    a.gamebill()
+                 
+                 if(b==6):
+                 
+                    a.display()
+                 
+                 if(b==7)
+                 
+                    quit()
+                 
+                 
+             main()
+                 
+                 
        
         
          
