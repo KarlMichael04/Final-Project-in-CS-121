@@ -163,44 +163,44 @@ class hotelbill:
 
 
         print ("Total Laundary Cost=P",self.t,"\n")
-    def gamebill(self)
+    def gamebill(self):
              
         print ("\t\t\t\t\t---------------------")
         print ("\t\t\t\t\t|     GAME MENU     |")
         print ("\t\t\t\t\t---------------------")
          
-          print(1.Table tennis--->Rs60","2.Bowling--->Rs80","3.Snooker--->Rs70","4.Video Games--->Rs90","5.Pool--->Rs50==6","6.Exit")
+        print("1.Table tennis--->Rs60","2.Bowling--->Rs80","3.Snooker--->Rs70","4.Video Games--->Rs90","5.Pool--->Rs50==6","6.Exit")
         
-       while(1):
-           g=int(input("Enter your choice:")
-         
-       if(g==1):
-           g=int(input(No.ofhours:")
-            self.p=self.p+60*h
-       
-         elif(g==2):
-           g=int(input(No.ofhours:")
-            self.p=self.p+80*h
+        while(1):
             
-         elif(g==3):
-           g=int(input(No.ofhours:")
-            self.p=self.p+70*h
-         
-         elif(g==4):
-           g=int(input(No.ofhours:")
-            self.p=self.p+90*h
-           
-         elif(g==5):
-           g=int(input(No.ofhours:")
-            self.p=self.p+50*h
-          
-         elif(g==6)
-           break;
-     
-       else:
-          print("Invalid option")
-  
-        print("TotalGameBill=Rs",self.p,"\n")
+            g=int(input("Enter your choice:"))
+            
+            if (g==1):
+                h=int(input("No. of hours:"))
+                self.p=self.p+60*h
+
+            elif (g==2):
+                h=int(input("No. of hours:"))
+                self.p=self.p+80*h
+
+            elif (g==3):
+                h=int(input("No. of hours:"))
+                self.p=self.p+70*h
+
+            elif (g==4):
+                h=int(input("No. of hours:"))
+                self.p=self.p+90*h
+
+            elif (g==5):
+                h=int(input("No. of hours:"))
+                self.p=self.p+50*h
+            elif (g==6):
+                break;
+
+            else:
+
+                print ("Invalid option")
+        print ("Total Game Bill=Rs",self.p,"\n")
   
 
      def dispaly(self):
