@@ -285,6 +285,7 @@ class hotelbill:
                     a.payment()
                  
                  if(b==8)
+                 print("Thank you for choosing our hotel to stay...")
                  
                     quit()
                  
