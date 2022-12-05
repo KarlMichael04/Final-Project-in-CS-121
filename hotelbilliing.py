@@ -1,6 +1,6 @@
 class hotelbill:
 
-    def __init__(self,rt='',s=0,p=0,r=0,t=0,a=1800,name='',address='',cindate='',coutdate='',rno=101):
+    def __init__(self,rt='',s=0,p=0,r=0,t=0,a=1800,pa='',name='',address='',cindate='',coutdate='',rno=101):
 
         print ("\t****************************************")
         print ("\t*                                      *")
@@ -15,6 +15,8 @@ class hotelbill:
         self.t=t
 
         self.p=p
+        
+        self.pa=pa
 
         self.s=s
         self.a=a
@@ -201,7 +203,7 @@ class hotelbill:
         print("TotalGameBill=Rs",self.p,"\n")
   
 
-       def dispaly(self):
+     def dispaly(self):
                        
            print ("\t\t\t\t\t---------------------")
            print ("\t\t\t\t\t|     HOTEL BILL    |")
@@ -222,7 +224,17 @@ class hotelbill:
            print("Your subtotal bill is:",self.rt)
            print("Additional Service Charge is:",self.a)
            print("Your grand total bill is:",self.rt+self.a"\n)
-           self.rno+=1                 
+           self.rno+=1      
+                 
+    def payment(self):
+
+        print ("\t\t\t-------------")
+        print ("\t\t\t|  Payment  |")
+        print ("\t\t\t-------------")
+        print("Your grandtotal bill is:",self.rt self.a)
+        h=int(input("Payment Amount:"))
+        self.pa=self.pa
+        print("You successfully pay..")
                  
            def main():
                  
@@ -240,8 +252,10 @@ class hotelbill:
                      print("5.GAme Bill")
                  
                      print("6.Show total cost")
+                     
+                     print("7.Payment")
                  
-                     print("7.EXIT")
+                     print("8.EXIT")
                  
                  b=int(input("\nEnter your choice:"))
                  if(b==1):
@@ -268,6 +282,9 @@ class hotelbill:
                     a.display()
                  
                  if(b==7)
+                    a.payment()
+                 
+                 if(b==8)
                  
                     quit()
                  
