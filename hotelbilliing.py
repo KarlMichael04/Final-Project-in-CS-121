@@ -28,7 +28,7 @@ class hotelbill:
     def inputdata(self):
         
         print ("\t\t\t---------------")
-        print ("\t\t\t|   Booking   |")
+        print ("\t\t\t|   Check-in  |")
         print ("\t\t\t---------------")
         self.name=input("\nEnter your name:")
         self.address=input("\nEnter your address:")
@@ -241,7 +241,7 @@ class hotelbill:
                  a=hotelfare()
                  
                  while (1):                 
-                     print("1.Booking Info")
+                     print("1.Check-in")
                  
                      print("2.Room Rent")
                  
@@ -255,7 +255,7 @@ class hotelbill:
                      
                      print("7.Payment")
                  
-                     print("8.EXIT")
+                     print("8.Check-out")
                  
                  b=int(input("\nEnter your choice:"))
                  if(b==1):
