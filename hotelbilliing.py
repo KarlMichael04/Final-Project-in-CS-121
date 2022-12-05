@@ -24,6 +24,10 @@ class hotelbill:
         self.coutdate=coutdate
         self.rno=rno
     def inputdata(self):
+        
+        print ("\t\t\t---------------")
+        print ("\t\t\t|   Login     |")
+        print ("\t\t\t---------------")
         self.name=input("\nEnter your name:")
         self.address=input("\nEnter your address:")
         self.cindate=input("\nEnter your check in date:")
@@ -32,17 +36,19 @@ class hotelbill:
         
     def roomrent(self):#sel1353
         
-        print ("We have the following rooms for you:-")
+        print ("\t\t\t-------------------")
+        print ("\t\t\t|Rooms Description|")
+        print ("\t\t\t-------------------")
         
-        print ("1.  type A---->rs 6000 PN\-")
+        print ("1.  type A---->rs 6000 ")
         
-        print ("2.  type B---->rs 5000 PN\-")
+        print ("2.  type B---->rs 5000 ")
         
-        print ("3.  type C---->rs 4000 PN\-")
+        print ("3.  type C---->rs 4000 ")
         
-        print ("4.  type D---->RS 3000 PN\-")
+        print ("4.  type D---->RS 3000 ")
         
-        x=int(input("Enter Your Choice Please->"-))
+        x=int(input("Enter Your Choice Please:"))
         
         n=int(input("For How Many Nights Did You Stay:"))
         
@@ -78,7 +84,9 @@ class hotelbill:
         
      def restaurantbill(self):
         
-       print("*****RESTAURANT MENU*****")
+        print ("\t\t\t\t\t---------------------")
+        print("\t\t\t\t\t|  RESTAURANT MENU  |")
+        print ("\t\t\t\t\t---------------------")
         
        print("1.water----->Rs20","2.tea----->Rs10","3.breakfast combo--->Rs90","4.lunch---->Rs110","4.dinner--->Rs150","6.Exit")
         
@@ -114,7 +122,10 @@ class hotelbill:
       print ("Total food Cost+Rs,self.r,"\n")
              
     def	laundrybill(self):
-        print ("******LAUNDRY MENU*******")
+             
+        print ("\t\t\t\t\t---------------------")
+        print ("\t\t\t\t\t|    LAUNDRY MENU   |")
+        print ("\t\t\t\t\t---------------------")
 
         print ("1.Shorts----->P3","2.Shirts----->P4","3.Jackets--->P10","4.Jeans---->P8","5.Suit--->P15","6.Exit")
 
@@ -150,8 +161,11 @@ class hotelbill:
 
 
         print ("Total Laundary Cost=P",self.t,"\n")
-    defgamebill(self)   
-          print("******GAME MENU******")
+    def gamebill(self)
+             
+        print ("\t\t\t\t\t---------------------")
+        print ("\t\t\t\t\t|     GAME MENU     |")
+        print ("\t\t\t\t\t---------------------")
          
           print(1.Table tennis--->Rs60","2.Bowling--->Rs80","3.Snooker--->Rs70","4.Video Games--->Rs90","5.Pool--->Rs50==6","6.Exit")
         
@@ -187,8 +201,11 @@ class hotelbill:
         print("TotalGameBill=Rs",self.p,"\n")
   
 
-       defdispaly(self):
-           print("*******HOTEL BILLS******")
+       def dispaly(self):
+                       
+           print ("\t\t\t\t\t---------------------")
+           print ("\t\t\t\t\t|     HOTEL BILL    |")
+           print ("\t\t\t\t\t---------------------")
            print("Customer details")
            print("Customer name:",self.name)
            print("Customer address:",self.address)
@@ -255,9 +272,7 @@ class hotelbill:
                     quit()
                  
                  
-             main()
-                 
-                 
+             main()           
        
         
          
