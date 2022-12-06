@@ -94,7 +94,7 @@ class hotelbill:
         
        while (1):
             
-         C=int(input("Enter your choice:"))
+         c=int(input("Enter your choice:"))
                   
          if (c==1):
              d=int(input("Enter the quantity:"))
@@ -121,7 +121,7 @@ class hotelbill:
          else:
             print("Invalid option")
             
-      print ("Total food Cost+Rs,self.r,"\n")
+         print ("Total food Cost+Rs,self.r,"\n")
              
     def	laundrybill(self):
              
@@ -224,80 +224,67 @@ class hotelbill:
            print("Your subtotal bill is:",self.rt)
            print("Additional Service Charge is:",self.a)
            print("Your grand total bill is:",self.rt+self.a"\n)
-           self.rno+=1      
-                 
-    def payment(self):
+           self.rno+=1
 
-        print ("\t\t\t-------------")
-        print ("\t\t\t|  Payment  |")
-        print ("\t\t\t-------------")
-        print("Your grandtotal bill is:",self.rt self.a)
-        h=int(input("Payment Amount:"))
-        self.pa=self.pa
-        print("You successfully pay..")
-                 
-           def main():
-                 
-                 a=hotelfare()
-                 
-                 while (1):                 
-                     print("1.Check-in")
-                 
-                     print("2.Room Rent")
-                 
-                     print("3.Restaurant Bill")
-                 
-                     print("4.Laundry Bill")
-                 
-                     print("5.GAme Bill")
-                 
-                     print("6.Show total cost")
-                     
-                     print("7.Payment")
-                 
-                     print("8.Check-out")
-                 
-                 b=int(input("\nEnter your choice:"))
-                 if(b==1):
-                    a.inputdata()
-                 
-                 if(b==2):
-                 
-                    a.roomrent()
-                 
-                 if(b==3):
-                   
-                    a.restaurantbill()
-                 
-                 if(b==4):
-                 
-                    a.laudrybill()
-                 
-                 if(b==5):
-                 
-                    a.gamebill()
-                 
-                 if(b==6):
-                 
-                    a.display()
-                 
-                 if(b==7)
-                    a.payment()
-                 
-                 if(b==8)
-                 print("Thank you for choosing our hotel to stay...")
-                 
-                    quit()
-                 
-                 
-             main()           
-       
+ def main():
+    
+    a=hotelfare()
+
+    while (1):
+
+        print("---------------------")
+        print("1.Check-in")
         
-         
-       
-       
-              
-                
-                
-                
-                  
+        print("2.Room Rent")
+
+        print("3.Restaurant Bill")
+
+        print("4.Laundry Bill")
+
+        print("5.Game Bill")
+
+        print("6.Show total cost")
+
+        print("7.Payment")
+
+        print("8.Check-out")
+
+        print ("\n---------------------")
+        b=str(input("Enter your choice: "))
+        print ("\n---------------------")
+        if (b=="1"):
+            a.inputdata()
+
+        elif (b=="2"):
+
+            a.roomrent()
+
+        elif (b=="3"):
+
+            a.restaurentbill()
+
+        elif (b=="4"):
+
+            a.laundrybill()
+
+        elif (b=="5"):
+
+            a.gamebill()
+
+        elif (b=="6"):
+
+            a.display()
+
+        elif (b=="7"):
+            a.payment()
+
+        elif (b=="8"):
+            print("Thank you for choosing our hotel to stay...")
+            quit()
+
+        else:
+            print("Invalid choice! Try again")
+
+
+main()
+                 
