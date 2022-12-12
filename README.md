@@ -1,6 +1,6 @@
-# HOTEL BILLING SYSTEM
+# Bank Management System
 
-Hotel billing System is developed using Python programming language. Where you can check in, check out and calculate your bill.
+A simple console application bank management system using python programming language.
  
  
 # Classes
