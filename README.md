@@ -26,7 +26,7 @@ The Bank Management System is a program for maintaining a person’s account in 
 
 # Video Presentation
 
-https://l.facebook.com/l.php?u=https%3A%2F%2Fyoutu.be%2FWdnjai0P9Xk%3Ffbclid%3DIwAR3QA5vlORQVKkl-3Nd0hfVuQWo7-lvbnv6XfvyhJrBME-HdsMwGftg46AI&h=AT3aFnHMJY71pdp5_hWp3ve43SP6uyUS9lyfHSnp8KosjDb81xX6DDsKQSkoBnxOM8qV5Lv8pyh-npRluHFY6K0zfY7mhOs5NTwxd34-f_r8Wmi6psbVh1oyUGJ0FtYPHSVfYQ
+https://youtu.be/Wdnjai0P9Xk
 
 # Self Assessment
 
