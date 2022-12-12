@@ -32,6 +32,33 @@ class BankAccount:
             print(f'Transaction completed. Current Balance: ₹{self.acc_balance}')
         else:
             print('Invalid amount transaction aborted')
+    
+    def payment(self, other):
+        amount = int(input('Enter the payment amount: '))
+        if amount <= self.acc_balance and amount > 0:
+            self.acc_balance      = self.acc_balance - amount
+            other.acc_balance     = other.acc_balance + amount
+            print(f'Transaction completed. Current Balance: ₹{self.acc_balance}')
+        else:
+            print('Invalid amount transaction aborted')
+
+if __name__ == '__main__':
+
+    cust1 = BankAccount(name='Shan', mobile_no=9557234717, initial_depo=1000, pin=121)
+    cust2 = BankAccount(name='Cha', mobile_no=9652106698, initial_depo=2000, pin=473)
+    print('No. of customers is',BankAccount.no_of_cust)
+    print(cust1.basic_details())
+    print(cust2.basic_details())
+    # cust1.deposit()
+    # print(cust1.basic_details())
+    # cust1.withdrawl()
+    # print(cust1.basic_details())
+    cust1.payment(cust2)
+    print(cust2.basic_details())
+
+
+
+
 
 
 
