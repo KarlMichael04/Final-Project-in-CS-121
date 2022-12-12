@@ -15,6 +15,11 @@ A simple console application bank management system using python programming lan
 * Display existing account
 * Log Out
 
+# Client Command
+*new_client() login() desposit() withdraw() moneytransfer()
+# Management Command
+*display()
+
 # Contributor
 * Dela Rosa, Chantile Ann C.
 * Fungo, Karl Michael
