@@ -52,7 +52,7 @@ def login():
         print('\n#############################################################\n')
         customer_dict[account_no].basic_details()
       
-      print('\t\t**************************')
+print('\t\t**************************')
 print('\t\t* Bank Management System *')
 print('\t\t**************************')
 while True:
