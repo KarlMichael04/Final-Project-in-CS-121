@@ -2,7 +2,10 @@
 
 A simple console application bank management system using python programming language.
  
- 
+# Purpose
+
+The Bank Management System is a program for maintaining a person’s account in a bank. This program provides the access to the Customer to create an account, deposit/withdraw the cash from his account, also to all accounts present.
+
 # Classes
 
 * interface
@@ -17,6 +20,7 @@ A simple console application bank management system using python programming lan
 
 # Client Command
 *new_client() login() desposit() withdraw() moneytransfer()
+
 # Management Command
 *display()
 
