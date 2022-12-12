@@ -5,14 +5,12 @@ A simple console application bank management system using python programming lan
  
 # Classes
 
-* hotelbill
+* interface
+* Bank
 
-# Method
+# Features
 
-* inputdata()
-* roomrent()
-* restaurantbill()
-* laundarybill()
-* gamebill()
-* display()
-* payment()
+* Creating new account/Logging in 
+* Deposit/Withdraw
+* Display existing account
+* Log Out
