@@ -28,6 +28,11 @@ The Bank Management System is a program for maintaining a person’s account in 
 
 https://youtu.be/Wdnjai0P9Xk
 
+# URL (Uniform Resource Locator)
+
+![INTERFACE](https://user-images.githubusercontent.com/119095700/206994472-22b09b33-d120-4489-b12b-54f450be5b79.png)
+
+
 # Self Assessment
 
 ![Minimalist Cream Orange Gym Features Comparison Chart Graph (1)](https://user-images.githubusercontent.com/119095700/206964022-58dc43da-5715-44b3-ae71-cf28721fbc2a.png)
