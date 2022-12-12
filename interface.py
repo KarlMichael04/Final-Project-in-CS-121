@@ -1,290 +1,54 @@
-class hotelbill:
+from Bank import BankAccount
 
-    def __init__(self,rt='',s=0,p=0,r=0,t=0,a=1800,pa='',name='',address='',cindate='',coutdate='',rno=101):
+customer_dict = {}              # use account no. as key and class object(customer account) as value
+mobile_acc_link = {}            # use mobile no. as key and store account no. as value, for linking purpose
 
-        print ("\t****************************************")
-        print ("\t*                                      *")
-        print ("\t*    Welcome to LA BATSTATE HOTEL      *")
-        print ("\t*                                      *")
-        print ("\t****************************************")
+def new_cust():
+    name = input('Enter the name of customer: ')
+    mobile_no = int(input('Enter the mobile number of customer: '))
+    initial_depo = int(input('Enter the initial deposit amount: '))
+    if initial_depo <= 0:
+        print('Invalid Amount')
+        return
+    pin = int(input('Create PIN: '))
+    customer = BankAccount(name=name, mobile_no=mobile_no, initial_depo=initial_depo, pin=pin)
+    customer_dict[customer.cust_acc_num] = customer                 # acct. no. stored as key and oject as value
+    mobile_acc_link[customer.mobile_no] = customer.cust_acc_num     # mobile no. linked
+    print('New User Created!')
+    print(f'Welcome {customer.name} to Corporate Bank. {customer.cust_acc_num} is your account number')
 
-        self.rt=rt
-
-        self.r=r
-
-        self.t=t
-
-        self.p=p
-        
-        self.pa=pa
-
-        self.s=s
-        self.a=a
-        self.name=name
-        self.address=address
-        self.cindate=cindate
-        self.coutdate=coutdate
-        self.rno=rno
-    def inputdata(self):
-        
-        print ("\t\t\t---------------")
-        print ("\t\t\t|   Check-in  |")
-        print ("\t\t\t---------------")
-        self.name=input("\nEnter your name:")
-        self.address=input("\nEnter your address:")
-        self.cindate=input("\nEnter your check in date:")
-        self.coutdate=input("\nEnter your checkout date:")
-        print("Your room no.:",self.rno,"\n")
-        
-    def roomrent(self):#sel1353
-        
-        print ("\t\t\t-------------------")
-        print ("\t\t\t|Rooms Description|")
-        print ("\t\t\t-------------------")
-        
-        print ("1.  type A---->rs 6000 ")
-        
-        print ("2.  type B---->rs 5000 ")
-        
-        print ("3.  type C---->rs 4000 ")
-        
-        print ("4.  type D---->RS 3000 ")
-        
-        x=int(input("Enter Your Choice Please:"))
-        
-        n=int(input("For How Many Nights Did You Stay:"))
-        
-        if(x==1);
-        
-            print ("You have opted room type A")
-            
-            self.s=6000*n
-            
-        elif (x==2):
-            
-            print ("You have opted a room type B")
-            
-            self.s=5000*n
-            
-        elif (x==3):
-            
-            print ("You have opted a room type C")
-            
-            self.s=4000*n
-            
-        elif (x==4):
-            
-            print ("You have opted room type D")
-            
-            self.s=3000*n
-            
-        else:
-            
-            print ("Please choose a room")
-   
-        print ("Your room rent is =",self.s,"\n")
-        
-     def restaurantbill(self):
-        
-        print ("\t\t\t\t\t---------------------")
-        print("\t\t\t\t\t|  RESTAURANT MENU  |")
-        print ("\t\t\t\t\t---------------------")
-        
-       print("1.water----->Rs20","2.tea----->Rs10","3.breakfast combo--->Rs90","4.lunch---->Rs110","4.dinner--->Rs150","6.Exit")
-        
-       while (1):
-            
-         c=int(input("Enter your choice:"))
-                  
-         if (c==1):
-             d=int(input("Enter the quantity:"))
-             self.r=self.r+20*d
-            
-         elif (c==2):
-             d=int(input("Enter the quantity:"))
-             self.r=self.r+10*d
-            
-         elif (c==3):
-             d=int(input("Enter the quantity:"))
-             self.r=self.r+90*d
-            
-         elif (c==4):
-             d=int(input("Enter the quantity:"))
-             self.r=self.r+110*d
-            
-         elif (c==5):
-             d=int(input("Enter the quantity:"))
-             self.r=self.r+150*d
-            
-         elif (c==6):
-            break;
-         else:
-            print("Invalid option")
-            
-         print ("Total food Cost+Rs,self.r,"\n")
-             
-    def	laundrybill(self):
-             
-        print ("\t\t\t\t\t---------------------")
-        print ("\t\t\t\t\t|    LAUNDRY MENU   |")
-        print ("\t\t\t\t\t---------------------")
-
-        print ("1.Shorts----->P3","2.Shirts----->P4","3.Jackets--->P10","4.Jeans---->P8","5.Suit--->P15","6.Exit")
-
-        while (1):
-            #brought to you by code-projects.org
-
-            e=int(input("Enter your choice:"))
-
-            if (e==1):
-                f=int(input("Enter the quantity:"))
-                self.t=self.t+3*f
-
-            elif (e==2):
-                f=int(input("Enter the quantity:"))
-                self.t=self.t+4*f
-
-            elif (e==3):
-                f=int(input("Enter the quantity:"))
-                self.t=self.t+10*f
-
-            elif (e==4):
-                f=int(input("Enter the quantity:"))
-                self.t=self.t+8*f
-
-            elif (e==5):
-                f=int(input("Enter the quantity:"))
-                self.t=self.t+15*f
-            elif (e==6):
-                break;
-            else:
-
-                print ("Invalid option")
-
-
-        print ("Total Laundary Cost=P",self.t,"\n")
-    def gamebill(self):
-             
-        print ("\t\t\t\t\t---------------------")
-        print ("\t\t\t\t\t|     GAME MENU     |")
-        print ("\t\t\t\t\t---------------------")
-         
-        print("1.Table tennis--->Rs60","2.Bowling--->Rs80","3.Snooker--->Rs70","4.Video Games--->Rs90","5.Pool--->Rs50==6","6.Exit")
-        
-        while(1):
-            
-            g=int(input("Enter your choice:"))
-            
-            if (g==1):
-                h=int(input("No. of hours:"))
-                self.p=self.p+60*h
-
-            elif (g==2):
-                h=int(input("No. of hours:"))
-                self.p=self.p+80*h
-
-            elif (g==3):
-                h=int(input("No. of hours:"))
-                self.p=self.p+70*h
-
-            elif (g==4):
-                h=int(input("No. of hours:"))
-                self.p=self.p+90*h
-
-            elif (g==5):
-                h=int(input("No. of hours:"))
-                self.p=self.p+50*h
-            elif (g==6):
-                break;
-
-            else:
-
-                print ("Invalid option")
-        print ("Total Game Bill=Rs",self.p,"\n")
-  
-
-     def dispaly(self):
-                       
-           print ("\t\t\t\t\t---------------------")
-           print ("\t\t\t\t\t|     HOTEL BILL    |")
-           print ("\t\t\t\t\t---------------------")
-           print("Customer details")
-           print("Customer name:",self.name)
-           print("Customer address:",self.address)
-           print("Check in date:",self.cindate)
-           print("Check out date:",self.coutdate)
-           print("Room no.",self.rno)
-           print("Your Roomrent is:",self.s)
-           print("Your Foodbill is:",self.r)
-           print("Your laundrybill is:",self.t)
-           print("Your Gamebill is:",self.p
-
-           self.rt=self.s+self.t+self.p+self.r
-   
-           print("Your subtotal bill is:",self.rt)
-           print("Additional Service Charge is:",self.a)
-           print("Your grand total bill is:",self.rt+self.a"\n)
-           self.rno+=1
-
- def main():
-    
-    a=hotelfare()
-
-    while (1):
-
-        print("---------------------")
-        print("1.Check-in")
-        
-        print("2.Room Rent")
-
-        print("3.Restaurant Bill")
-
-        print("4.Laundry Bill")
-
-        print("5.Game Bill")
-
-        print("6.Show total cost")
-
-        print("7.Payment")
-
-        print("8.Check-out")
-
-        print ("\n---------------------")
-        b=str(input("Enter your choice: "))
-        print ("\n---------------------")
-        if (b=="1"):
-            a.inputdata()
-
-        elif (b=="2"):
-
-            a.roomrent()
-
-        elif (b=="3"):
-
-            a.restaurentbill()
-
-        elif (b=="4"):
-
-            a.laundrybill()
-
-        elif (b=="5"):
-
-            a.gamebill()
-
-        elif (b=="6"):
-
-            a.display()
-
-        elif (b=="7"):
-            a.payment()
-
-        elif (b=="8"):
-            print("Thank you for choosing our hotel to stay...")
-            quit()
-
-        else:
-            print("Invalid choice! Try again")
-
-
-main()
-                 
+def login():
+    account_no = int(input('Enter your Account Number: '))
+    account_pin = int(input('Enter your Account PIN: '))
+    if account_no in customer_dict.keys() and account_pin == customer_dict[account_no].pin :
+        print(f'\n{customer_dict[account_no].name} Logged in')
+        customer_dict[account_no].basic_details()
+    else:
+        print('Account either not exist or the pin is wrong')
+        return
+    while True:
+        print('''1. Deposit
+2. Withdrawl
+3. Money transfer
+4. Log out\n''')
+        user_input1 = input('Please enter your choice:')
+        if user_input1 == '1':
+            customer_dict[account_no].deposit()
+        elif user_input1 == '2':
+            customer_dict[account_no].withdrawl()
+        elif user_input1 == '3':
+            mobile = int(input('Enter the mobile number of recepient: '))
+            if mobile in mobile_acc_link.keys():
+                secondary = mobile_acc_link[mobile]             # use mobile no. to get acct. no.
+                customer_dict[account_no].payment(customer_dict[secondary])
+            else:
+                print('The mobile number you have enter does not have an account associated with it')
+        elif user_input1 == '4':
+            user_input1 = input('Do you really want to log out? Yes or No?') 
+            print('Logged Out')
+            return
+        else:
+            print('Invalid input try again')
+        print('\n#############################################################\n')
+        customer_dict[account_no].basic_details()
+      
