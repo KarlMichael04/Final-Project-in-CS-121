@@ -52,3 +52,26 @@ def login():
         print('\n#############################################################\n')
         customer_dict[account_no].basic_details()
       
+      print('\t\t**************************')
+print('\t\t* Bank Management System *')
+print('\t\t**************************')
+while True:
+    print('''1. Creating a new customer
+2. Logging in as an existing customer
+3. Displaying number of customers
+4. Exit\n''')
+    user_input1 = input('Please enter your choice:')
+
+    if user_input1 == '1':
+        print('\n\t----Create user----\n')
+        new_cust()
+    elif user_input1 == '2':
+        login()
+    elif user_input1 == '3':
+        print('There currently', BankAccount.no_of_cust,'customers in Corporate bank.')
+    elif user_input1 == '4':
+        print('Exited')
+        break
+    else:
+        print('Invalid input try again')
+    print('\n*************************************************************\n')
