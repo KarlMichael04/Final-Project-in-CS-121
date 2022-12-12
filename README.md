@@ -14,3 +14,9 @@ A simple console application bank management system using python programming lan
 * Deposit/Withdraw
 * Display existing account
 * Log Out
+
+# Contributor
+* Dela Rosa, Chantile Ann C.
+* Fungo, Karl Michael
+* Ilagan, Kennedy
+* Tila, Andria Alexa
